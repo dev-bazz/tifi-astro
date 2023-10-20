@@ -1,0 +1,116 @@
+---
+const navLinks = [
+    {
+        name: "About Us",
+        link: "#",
+    },
+    {
+        name: "Portfolio",
+        link: "#",
+    },
+    {
+        name: "Clients",
+        link: "#",
+        sub: [
+            {
+                name: "Client1",
+                link: "#",
+            },
+        ],
+    },
+    {
+        name: "Resources",
+        link: "#",
+    },
+];
+---
+
+<header>
+    <div
+        class="mt-8 flex justify-between items-center rounded-2xl border border-[##EAECF0] bg-white shadow-md max-w-4xl mx-auto py-4 px-5"
+    >
+        <div>
+            <img src="/tifi.svg" alt="Tifi Logo" class="w-[44px] h-[20px]" />
+        </div>
+        <!-- <nav>
+            <ul class="flex items-center space-x-8">
+                {
+                    navLinks.map((link, index) => (
+                        <li class={`${link.sub && "group"} relative`}>
+                            <a
+                                href={link.link}
+                                class={`text-[#2B2B2B] hover:text-[#FF601F] transition-all duration-300 ease-in-out  
+                                
+                                `}
+                            >
+                                {link.name}
+                            </a>
+                            {link.sub && (
+                                <ul
+                                    class="absolute top-10 left-0 bg-white shadow-md rounded-2xl py-4 px-5
+                                     hidden group-hover:block hover:block
+                                    "
+                                >
+                                    {link.sub.map((subLink, index) => (
+                                        <li>
+                                            <a
+                                                href={subLink.link}
+                                                class="text-[#2B2B2B] hover:text-[#FF601F] transition-all duration-300 ease-in-out"
+                                            >
+                                                {subLink.name}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav> -->
+
+        <nav>
+            <ul class="flex items-center space-x-8">
+                {
+                    navLinks.map((link, index) => (
+                        <li class={`${link.sub && "group"} relative`}>
+                            <a
+                                href={link.link}
+                                class="text-[#2B2B2B] hover:text-[#FF601F] transition-all duration-300 ease-in-out"
+                            >
+                                {link.name}
+                            </a>
+                            {link.sub && (
+                                <ul
+                                    class="absolute top-10 left-0 bg-white shadow-md rounded-2xl py-4 px-5
+                                    hidden group-hover:block hover:block transition-all duration-300 ease-in-out"
+                                >
+                                    {link.sub.map((subLink, index) => (
+                                        <li>
+                                            <a
+                                                href={subLink.link}
+                                                class="text-[#2B2B2B] hover:text-[#FF601F] transition-all duration-300 ease-in-out"
+                                            >
+                                                {subLink.name}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav>
+
+        <div>
+            <a href="#">
+                <button
+                    class="bg-[#FF601F] text-white px-5 py-3 rounded-[8px] hover:bg-[#FF4F00] transition-all duration-300 ease-in-out"
+                >
+                    LET's TALK</button
+                >
+            </a>
+        </div>
+    </div>
+</header>
