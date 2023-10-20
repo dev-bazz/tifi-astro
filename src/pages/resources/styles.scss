@@ -46,9 +46,11 @@
 		text-align: left;
 		gap: px-to-rem(8px);
 		align-items: center;
+		max-width: px-to-rem(320px);
 
 		input {
 			all: unset;
+			width: 100%;
 		}
 	}
 }
