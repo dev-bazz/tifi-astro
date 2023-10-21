@@ -1,33 +1,60 @@
 import React, { useState } from "react";
 // import play from './portfolio-icons/play.svg'
 
-const CarefullyPicked = () => {
-  const [active, setActive] = useState(1);
+type func = (e: React.MouseEvent<HTMLButtonElement>) => void;
+type val = string;
 
-  // font
+const CarefullyPicked = () => {
+  const [formType, setFormType] = useState("individual");
+
+  const handleFormTypeChange: func = (e) => {
+    e.preventDefault();
+    const target = e.target as HTMLButtonElement;
+    const val: string = target.value;
+    setFormType(val);
+  };
 
   return (
-    <section className="w-full py-24 mt-14 bg-gray-100 flex-col justify-start ">
+    <section className="w-full py-24 mt-14 bg-gray-300 flex-col justify-start ">
       <aside className="max-w-[1240px] my-0 mx-auto items-center gap-12 flex flex-col px-3 sm:px-4 md:px-8 xl:px-0">
-        <h2 className=" text-center text-slate-800 text-3xl md:text-6xl font-semibold font-redhat">
+        <h2 className=" text-center text-gray-1100 text-3xl md:text-6xl font-semibold font-redhat">
           Carefully Picked Videos
         </h2>
-        <div className="w-full flex-col justify-start items-end gap-14 flex">
+        <div className="w-full flex-col justify-center items-end gap-14 flex">
           <div className="w-full flex flex-col md:flex-row gap-4">
-            <div className="w-full self-center justify-center  items-start gap-10 flex border-b border-gray-300">
-              {["Businesses", "Individuals"].map((item, i) => (
-                <button
-                  key={i + 1}
-                  className={`text-center md:translate-x-3/4 lg:translate-x-1/2 pb-4  
-                      ${
-                        i === 1
-                          ? "border-orange-500 border-b-4 text-orange-500"
-                          : ""
-                      } text-xl font-bold font-noto`}
-                >
-                  {item}
-                </button>
-              ))}
+            {/*  */}
+
+            <div className="w-full self-center flex gap-10 justify-center items-center border-b border-[#D0D5DD]">
+              <button
+                onClick={handleFormTypeChange}
+                value="business"
+                className={`
+        pb-4
+        font-noto
+        text-base md:translate-x-3/4 lg:translate-x-1/2
+        ${
+          formType === "business"
+            ? "text-orange font-bold border-b-4 border-orange"
+            : "font-normal text-gray-1000 border-b-4 border-transparent"
+        }`}
+              >
+                Business
+              </button>
+
+              <button
+                onClick={handleFormTypeChange}
+                value="individual"
+                className={`
+        pb-4 font-noto
+        text-base md:translate-x-3/4 lg:translate-x-1/2
+        ${
+          formType === "individual"
+            ? "text-orange border-b-4 font-bold border-orange"
+            : "text-gray-1000 font-normal border-b-4 border-transparent"
+        }`}
+              >
+                Individual
+              </button>
             </div>
 
             <div className="w-full px-2 md:w-fit py-2.5 bg-white rounded-lg border border-gray-300 justify-start items-center gap-2 flex">
@@ -35,7 +62,7 @@ const CarefullyPicked = () => {
                 {["Short Films", "Movies"].map((item, i) => (
                   <option
                     key={i + 1}
-                    className="text-slate-800 text-base  font-noto  "
+                    className="text-gray-1100 text-base  font-noto  "
                   >
                     {item}
                   </option>
@@ -88,7 +115,7 @@ const CarefullyPicked = () => {
                   This could be your project as a part of our amazing curation.
                 </p>
 
-                <button className="text-gray-900 text-base font-extrabold font-inter leading-normal px-5 py-3 bg-white rounded-lg shadow">
+                <button className="text-gray-1100 text-base font-extrabold font-inter leading-normal px-5 py-3 bg-gray-300 rounded-lg shadow">
                   LET'S TALK!
                 </button>
               </aside>
