@@ -1,21 +1,24 @@
 ---
-interface Props  {
+interface Props {
 	secondary: boolean;
 	title: string;
 	body: string;
 	href: string;
 	img: string;
-
 }
 import "./style.scss";
 
-const {img="cardImg.png", secondary , title="Business Card", body=`	From marketing strategies to the latest industry insights,
+const {
+	img = "cardImg.png",
+	secondary,
+	title = "Business Card",
+	body = `	From marketing strategies to the latest industry insights,
 				our resources are designed to be your guiding light in the
 				world of visual storytelling. We're dedicated to helping
 				businesses harness the true potential of video content to
 				connect with their audience, drive conversions, and
-				elevate their brand presence.` } = Astro.props;
-
+				elevate their brand presence.`,
+} = Astro.props;
 ---
 
 <div class:list={["resource-card", { orange: secondary }]}>
@@ -23,7 +26,7 @@ const {img="cardImg.png", secondary , title="Business Card", body=`	From marketi
 		<div class="card_details">
 			<h3>{title}</h3>
 			<p>
-		{body}
+				{body}
 			</p>
 		</div>
 		<a
@@ -31,10 +34,22 @@ const {img="cardImg.png", secondary , title="Business Card", body=`	From marketi
 			href="">
 			<span class="res-card-link-span">VIEW RESOURCES</span>
 			<span>
-				<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path id="Vector 1" d="M17 2L3 16M17 2V15.1765M17 2H3.82353" stroke="#101828" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"/>
+				<svg
+					width="19"
+					height="19"
+					viewBox="0 0 19 19"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						id="Vector 1"
+						d="M17 2L3 16M17 2V15.1765M17 2H3.82353"
+						stroke="#101828"
+						stroke-width="3"
+						stroke-linecap="square"
+						stroke-linejoin="bevel"
+					></path>
 				</svg>
-				</span>
+			</span>
 		</a>
 	</div><div class="resource-card-img">
 		<img
