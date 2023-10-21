@@ -2,6 +2,7 @@
 import MainLayout from "../../layouts/Layout.astro";
 import "./styles.scss";
 import Card from "../../components/RessourcesCard/index.astro";
+import FAQ from "../../components/ResourcesFAQ/FAQ.astro";
 ---
 
 <MainLayout title="Resources">
@@ -51,8 +52,42 @@ import Card from "../../components/RessourcesCard/index.astro";
 		class="cards">
 		<!-- Resources -->
 		<div class="resources-container">
+			<header>
+				<h3>WHAT WE CAN DO FOR YOU</h3>
+				<h2>Custom Solutions for...</h2>
+			</header>
 			<Card />
-			<Card secondary={true}  title="Individuals" body={`Whether you're a content creator, a filmmaker, or someone with a passion for video, our resources are designed to be your creative compass. We're here to help you turn your vision into captivating reality, enhancing your storytelling, and making every frame count.`} href="" img="individual.png"/>
+			<Card
+				secondary={true}
+				title="Individuals"
+				body={`Whether you're a content creator, a filmmaker, or someone with a passion for video, our resources are designed to be your creative compass. We're here to help you turn your vision into captivating reality, enhancing your storytelling, and making every frame count.`}
+				href=""
+				img="individual.png"
+			/>
 		</div>
+	</section>
+	<section aria-labelledby="contact">
+		<header>
+			<h2 id="contact"
+				>Let's create something special together.</h2
+			>
+			<p
+				>In just 48 hours, our experts will meticulously assess
+				your video content and reveal untapped opportunities for
+				enhancing your brand and visual storytelling.</p
+			>
+		</header>
+		<div class="links">
+			<a href="/">Business</a>
+			<a href="/">Individual</a>
+		</div>
+		<hr />
+		<div class="">
+			<form action=""> </form>
+		</div>
+	</section>
+
+	<section>
+		<FAQ />
 	</section>
 </MainLayout>
