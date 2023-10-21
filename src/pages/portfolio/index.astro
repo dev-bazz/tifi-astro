@@ -1,11 +1,11 @@
 ---
-import CarefullyPicked from './CarefullyPicked'
-import PortfolioForm from './PortfolioForm'
+import CarefullyPicked from '../../components/Portfolio/CarefullyPicked'
+import PortfolioForm from '../../components/Portfolio/PortfolioForm'
 import Layout from '../../layouts/Layout.astro'
 import SocialProof from '../../components/SocialProof.astro'
 import {FormContainer }from '../../components/FormContainer'
 import FAQLayout from '../../components/ResourcesFAQ/FAQLayout.astro'
-import Vector from './Vector'
+import Vector from '../../components/Portfolio/Vector'
 ---
 
 <Layout title="Tifi">
@@ -21,12 +21,12 @@ import Vector from './Vector'
   </section>
   
   
-    <CarefullyPicked client:only="react"/>
+    <CarefullyPicked client:load />
   
     <section class="relative w-full">
       <Vector display={"top-0 left-0"} />
     <PortfolioForm/>
-    <FormContainer client:only="react"/>
+    <FormContainer client:load />
     <Vector display={"right-0 -bottom-8 rotate-180"}/>
     <Vector display={"left-0 -bottom-[40%] sm:hidden"}/>
   </section>
