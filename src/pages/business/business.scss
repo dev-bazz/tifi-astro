@@ -156,6 +156,81 @@
   }
 }
 
+.custom-solutions-section {
+  display: flex;
+  flex-direction: column;
+  background: #fcfcfd;
+  width: 100%;
+  padding: 6rem 10rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+
+  .solutions-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+
+    .solutions-title-text {
+      color: #ff601f;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 160%;
+    }
+
+    .solutions-title {
+      color: #101828;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: 600;
+    }
+  }
+
+  .solution-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    .solution-card {
+      display: flex;
+      border-radius: 1rem;
+      padding: 2rem;
+      height: 25rem;
+      width: 31rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.625rem;
+      flex: 1 0 0;
+
+      .solution-card-title {
+        color: #101828;
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 160%;
+        text-wrap: nowrap;
+      }
+
+      .solution-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 2rem;
+        gap: 0.5rem;
+        align-self: stretch;
+
+        li {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .business-title-card {
     height: 25.6875rem;
@@ -219,6 +294,33 @@
       width: 39.625rem;
     }
   }
+
+  .custom-solutions-section {
+    padding: 4.5rem 2.5rem;
+    .solutions-title-container {
+      .solutions-title-text {
+        font-size: 1.25rem;
+      }
+
+      .solutions-title {
+        font-size: 3rem;
+      }
+    }
+
+    .solution-cards {
+      flex-direction: column;
+      align-items: flex-start;
+      align-self: stretch;
+
+      .solution-card {
+        width: 100%;
+
+        .solution-card-title {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -250,6 +352,27 @@
     }
     .corporate-bottom-text {
       width: auto;
+    }
+  }
+
+  .custom-solutions-section {
+    padding: 4rem 1rem;
+    .solutions-title-container {
+      .solutions-title-text {
+        font-size: 1rem;
+      }
+
+      .solutions-title {
+        font-size: 2rem;
+      }
+    }
+
+    .solution-cards {
+      .solution-card {
+        .solution-card-title {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }
