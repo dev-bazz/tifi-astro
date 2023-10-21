@@ -216,11 +216,14 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
+		@include custom-media-query("mobile", 538px) {
+			font-size: 10px;
+		}
 
 		&:is(.active) {
 			color: #ff601f;
 			text-align: center;
-			font-size: 16px;
+
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;

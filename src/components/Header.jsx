@@ -7,7 +7,7 @@ const navLinks = [
 	},
 	{
 		name: "Portfolio",
-		link: "portfolio",
+		link: "/portfolio",
 	},
 	{
 		name: "Clients",
