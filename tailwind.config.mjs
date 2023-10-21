@@ -6,6 +6,8 @@ export default {
       colors: {
         orange: "#FF601F",
         "gray-300": "#F2F4F7",
+        "gray-500": "#D0D5DD",
+        "gray-600": "#98A2B3",
         "gray-1000": "#1D2939",
         "gray-1100": "#101828",
       },
