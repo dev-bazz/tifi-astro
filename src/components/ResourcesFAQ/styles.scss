@@ -26,6 +26,9 @@
 			font-style: normal;
 			font-weight: 700;
 			line-height: 28px; /* 127.273% */
+			@include custom-media-query("mobile", 538px) {
+				font-size: px-to-rem(18px);
+			}
 		}
 	}
 
@@ -35,6 +38,9 @@
 		overflow-y: hidden;
 		transition: all 0.8s ease-in-out;
 		padding-right: px-to-rem(42px);
+		@include custom-media-query("mobile", 538px) {
+			padding-right: 0;
+		}
 	}
 
 	.open {
@@ -44,6 +50,9 @@
 
 .bigPadding {
 	padding-block: px-to-rem(60px);
+	@include custom-media-query("mobile", 538px) {
+		padding: px-to-rem(44px);
+	}
 }
 
 .resources-faq[open] {
@@ -74,10 +83,13 @@
 		justify-content: space-between;
 		gap: px-to-rem(24px);
 		display: flex;
+		@include custom-media-query("mobile", 538px) {
+			flex-direction: column;
+		}
 	}
 
 	header {
-		margin-bottom: px-to-rem(24px);
+		margin-bottom: px-to-rem(48px);
 	}
 	.left {
 		display: flex;
