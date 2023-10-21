@@ -1,0 +1,48 @@
+.case-study-card {
+  display: flex;
+  border-radius: 0.5rem;
+  background-color: white;
+  height: 26.6875rem;
+  padding: 1.875rem 1.9375rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+
+  .case-study-card-text-container {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex: 1 0 0;
+    align-self: stretch;
+
+    .case-study-card-title {
+      color: #1d2939;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 160%;
+    }
+
+    .case-study-card-text {
+      color: #344054;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 1.6rem */
+    }
+  }
+
+  .case-study-card-button {
+    display: flex;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-500, #d0d5dd);
+    box-shadow: 0px 14px 16px 0px rgba(29, 41, 57, 0.05);
+    padding: 0.75rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    align-self: stretch;
+  }
+}
