@@ -2,14 +2,22 @@
 import Button from "./Button.astro";
 ---
 
-<section id="hero" class="h-[28rem] p-4 grid gap-4 place-content-center text-center">
-    <h1 class="font-bold text-3xl">Crafting visual stories <span class="text-orange"> beyond</span> imagination</h1>
-    <p class="mt-2 text-base">Elevate your brand, Experience the power of storytelling through the lens of creativity and innocation</p>
+<section id="hero" class="max-w-[73rem] mx-auto h-[28rem] p-4 grid gap-4 place-content-center text-center md:py-[15rem]">
+    <h1 class="max-w-[52.5rem] font-bold text-3xl capitalize md:text-6xl lead">Crafting visual stories <span class="text-orange"> beyond</span> imagination</h1>
+    <p class="max-w-[32.5rem] mt-2 mx-auto text-base ">Elevate your brand, Experience the power of storytelling through the lens of creativity and innocation</p>
     <Button text="Let's Talk" />
 </section>
 
 <style>
     section{
         background: url('/images/hero-mobile.png') 50% 100% no-repeat;
+        background-size: cover;
     }
+
+    @media screen and (min-width: 768px) {
+        section{
+            background: url('/images/hero.png') 50% 100% no-repeat;
+            background-size: cover;
+        }
+        }
 </style>
