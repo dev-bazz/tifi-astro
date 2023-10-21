@@ -178,6 +178,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 32px;
+		@include custom-media-query("mobile", 538px) {
+			max-width: px-to-rem(310px);
+		}
 	}
 
 	.des-tag2 {
