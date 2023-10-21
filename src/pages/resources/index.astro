@@ -44,9 +44,46 @@ import SocialProof from "../../components/SocialProof.astro";
 		</div>
 	</section>
 
-	<section aria-labelledby="featured">
+	<section
+		class="res-featured"
+		aria-labelledby="res-featured">
 		<!-- Features -->
+
 		<div class="resources-container">
+			<div class="res-tab-container">
+				<div class="res-tab">
+					<span class="res-tab-title">
+						<p>Video Editing Tips</p>
+					</span>
+					<span class="res-tab-title">
+						<p>Video Editing Tips</p>
+					</span>
+					<span class="res-tab-title">
+						<p>Video Editing Tips</p>
+					</span>
+					<span class="res-tab-title">
+						<p>Video Editing Tips</p>
+					</span>
+				</div>
+				<div class="res-select">
+					<select
+						name="drop"
+						id="">
+						<option value="">Newst First</option>
+						<option value="">Newst First</option>
+						<option value="">Newst First</option>
+						<option value="">Newst First</option>
+					</select>
+					<select
+						name="drop"
+						id="">
+						<option value="">Newst First</option>
+						<option value="">Newst First</option>
+						<option value="">Newst First</option>
+						<option value="">Newst First</option>
+					</select>
+				</div>
+			</div>
 			<h2 id="featured">Featured</h2>
 		</div>
 	</section>
@@ -86,7 +123,7 @@ import SocialProof from "../../components/SocialProof.astro";
 		</header>
 
 		<div class="">
-			<FormContainer />
+			<FormContainer client:load />
 		</div>
 	</section>
 	<FAQLayout />
