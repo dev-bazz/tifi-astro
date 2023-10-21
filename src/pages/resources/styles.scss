@@ -60,6 +60,27 @@
 	background: var(--gray-300, #f2f4f7);
 	padding-block: px-to-rem(100px);
 
+	header {
+		text-align: center;
+		h3 {
+			color: #ff601f;
+			font-size: px-to-rem(20px);
+			font-style: normal;
+			font-weight: 700;
+			line-height: 160%; /* 32px */
+			@include custom-media-query("mobile", 400px) {
+				font-size: px-to-rem(18px);
+			}
+		}
+
+		h2 {
+			font-size: px-to-rem(48px);
+			font-weight: 600;
+			@include custom-media-query("mobile", 400px) {
+				font-size: px-to-rem(32px);
+			}
+		}
+	}
 	.resources-container {
 		display: flex;
 		flex-direction: column;

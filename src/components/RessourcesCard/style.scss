@@ -6,6 +6,12 @@
 	background-color: white;
 	display: flex;
 	justify-content: space-between;
+	gap: px-to-rem(16px);
+
+	@include custom-media-query("mobile", 834px) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
 
 	&:is(.orange) {
 		background: #f4e2dd;
@@ -19,6 +25,15 @@
 
 		padding: px-to-rem(28px) px-to-rem(0px) px-to-rem(28px)
 			px-to-rem(44px);
+
+		@include custom-media-query("mobile", 834px) {
+			padding: px-to-rem(20px);
+			.card_details {
+				h3 {
+					margin-top: 0;
+				}
+			}
+		}
 
 		.res-card-link {
 			margin-top: px-to-rem(28px);
