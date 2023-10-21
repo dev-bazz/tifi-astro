@@ -49,7 +49,7 @@
 }
 
 .bigPadding {
-	padding-block: px-to-rem(60px);
+	padding-block: px-to-rem(50px);
 	@include custom-media-query("mobile", 538px) {
 		padding: px-to-rem(44px);
 	}
