@@ -1,0 +1,83 @@
+---
+import "./styles.scss";
+interface Props {
+	title?: string;
+	body?: string;
+	bigPadding?: boolean;
+}
+
+const {
+	title = "Hello World",
+	body = `Tifi.tv offers a wide range of services, including video editing, content creation, motion graphics, color grading, animation, and more. Our goal is to bring your creative vision to life through visual storytelling.`,
+	bigPadding = false,
+} = Astro.props;
+---
+
+<details
+	class:list={["resources-faq", { bigPadding: bigPadding }]}>
+	<summary>
+		<div class="resources-faq-header"
+			><h3>{title}</h3>
+
+			<span class="closed">
+				<svg
+					width="42"
+					height="43"
+					viewBox="0 0 42 43"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<rect
+						x="0.5"
+						y="0.583496"
+						width="41.5"
+						height="41.5"
+						rx="8"
+						fill="#EAECF0"
+					></rect>
+					<path
+						d="M15 21.5835H27"
+						stroke="#101828"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					></path>
+					<path
+						d="M21 27.5835V15.5835"
+						stroke="#101828"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					></path>
+				</svg>
+			</span>
+			<span class="open">
+				<svg
+					width="42"
+					height="42"
+					viewBox="0 0 42 42"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<rect
+						x="0.5"
+						width="41.5"
+						height="41.5"
+						rx="8"
+						fill="#FF601F"
+					></rect>
+					<path
+						d="M15 21H27"
+						stroke="#F2F4F7"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					></path>
+				</svg>
+			</span>
+		</div></summary
+	>
+	<div class="resources-faq-body">
+		<p>
+			{body}
+		</p>
+	</div>
+</details>
