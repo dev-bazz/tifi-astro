@@ -1,0 +1,19 @@
+---
+import MainLayout from '../../layouts/Layout.astro'
+import { FormContainer } from "../../components/FormContainer";
+import SocialProof from "../../components/SocialProof.astro";
+import './contact.scss'
+---
+
+<MainLayout title='Contact Us'>
+<section class="contact-form-section">
+  <div class="contact-title-container">
+    <h3>GET IN TOUCH</h3>
+    <p>In just 48 hours, our experts will meticulously assess your video content and reveal untapped opportunities for enhancing your <span class="font-bold">brand</span> and visual storytelling.</p>
+  </div>
+  <div class="contact-form-container">
+    <FormContainer client:load />
+  </div>
+</section>
+<SocialProof />
+</MainLayout>
