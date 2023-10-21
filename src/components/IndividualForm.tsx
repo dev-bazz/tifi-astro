@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { Input } from "./Input";
-<<<<<<< HEAD
 export  const IndividualForm = () => {
-=======
-
-export const IndividualForm = () => {
->>>>>>> 006c18897ce37e803c20bb7debfb748a61c94811
     const [formData, setFormData] = useState({
         full_name: "",
         email: "",

@@ -24,7 +24,7 @@ export  const IndividualForm = () => {
 
     return (
         <div className="my-16 max-w-2xl w-full mx-auto p-4 font-plus">
-                <h1 className='font-redhat md:text-6xl w-full mb-16 text-center font-extrabold mt-8'>LET US KNOW HOW WE CAN HELP YOUR BUSINESS.</h1>
+                <h1 className='font-redhat md:text-5xl w-full mb-16 text-center font-bold mt-8'>LET US KNOW HOW WE CAN HELP YOUR BUSINESS.</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             <Input
