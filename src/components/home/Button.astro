@@ -1,7 +1,7 @@
 ---
-const {text, classNames, iconPath} = Astro.props;
+const {url, text, classNames, iconPath} = Astro.props;
 ---
-<a href="" class={`flex gap-3 w-fit p-3 px-5 bg-orange font-bold uppercase ${classNames}`}>
+<a href={url} class={`flex gap-3 w-fit p-3 px-5 bg-orange font-bold uppercase ${classNames}`}>
     {text}
     <img src={iconPath} alt="icon">
 </a>
