@@ -23,6 +23,9 @@ export  const IndividualForm = () => {
     };
 
     return (
+        <div className="my-16 max-w-2xl w-full mx-auto p-4 font-plus">
+                <h1 className='font-redhat md:text-5xl w-full mb-16 text-center font-bold mt-8'>LET US KNOW HOW WE CAN HELP YOUR BUSINESS.</h1>
+
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             <Input
                 label="Full Name"
@@ -78,6 +81,7 @@ export  const IndividualForm = () => {
             className="bg-[#FF601F] text-base text-white font-bold py-[16px] font-inter rounded-[8px] disabled:opacity-50 disabled:cursor-not-allowed"
             >SEND MESSAGE</button>
         </form>
+        </div>
     );
 };
 

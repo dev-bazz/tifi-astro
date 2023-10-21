@@ -5,10 +5,10 @@ import { IndividualForm } from "./IndividualForm";
 export const FormContainer = () => {
 	const [formType, setFormType] = useState("business");
 
-	const handleFormTypeChange = (e) => {
-		// console.log(e.target.value);
-		setFormType(e.target.value);
+	const handleFormTypeChange = (e: React.FormEvent<HTMLButtonElement>) => {
+		setFormType(e.currentTarget.value);
 	};
+
 
 	return (
 		<section>
