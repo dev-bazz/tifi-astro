@@ -16,7 +16,7 @@ const CarefullyPicked = () => {
 
   return (
     <section className="w-full py-24 mt-14 bg-gray-300 flex-col justify-start ">
-      <aside className="max-w-[1240px] my-0 mx-auto items-center gap-12 flex flex-col px-3 sm:px-4 md:px-8 xl:px-0">
+      <aside className="max-w-5xl my-0 mx-auto items-center gap-12 flex flex-col px-3 sm:px-4 md:px-8 xl:px-0">
         <h2 className=" text-center text-gray-1100 text-3xl md:text-6xl font-semibold font-redhat">
           Carefully Picked Videos
         </h2>

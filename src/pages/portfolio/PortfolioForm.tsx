@@ -1,11 +1,9 @@
 import React from "react";
-import Vector from "./Vector";
 
 const PortfolioForm = () => {
   return (
-    <section className="py-16 bg-white flex-col justify-end items-center gap-12 flex relative">
-      <Vector />
-      <div className="flex-col justify-start items-center gap-6 flex max-w-[1240px] my-0 mx-auto px-3 sm:px-8 md:px-24 xl:px-32">
+    <aside className="py-16 bg-white flex-col justify-end items-center gap-12 flex ">
+      <div className="flex-col justify-start items-center gap-6 flex max-w-5xl my-0 mx-auto px-3 sm:px-8 md:px-14 xl:px-20">
         <h3 className="text-center text-gray-1100 text-3xl md:text-6xl font-semibold font-redhat uppercase">
           Let us know how we can help you.
         </h3>
@@ -16,7 +14,7 @@ const PortfolioForm = () => {
           and visual storytelling.
         </p>
       </div>
-    </section>
+    </aside>
   );
 };
 

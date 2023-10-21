@@ -1,9 +1,13 @@
 import React from "react";
 
-const Vector = () => {
+interface VectorProps {
+  display: string;
+}
+
+const Vector = ({ display }: VectorProps) => {
   return (
     <svg
-      className="absolute top-0 left-0"
+      className={`absolute ${display} sm:opacity-0 lg:opacity-100`}
       width="390"
       height="392"
       viewBox="0 0 390 392"

@@ -1,16 +1,17 @@
 ---
 import CarefullyPicked from './CarefullyPicked'
 import PortfolioForm from './PortfolioForm'
-import Vector from "./Vector"
 import Layout from '../../layouts/Layout.astro'
 import SocialProof from '../../components/SocialProof.astro'
 import {FormContainer }from '../../components/FormContainer'
+import FAQLayout from '../../components/ResourcesFAQ/FAQLayout.astro'
+import Vector from './Vector'
 ---
 
 <Layout title="Tifi">
 <main>
 
-  <section class=" max-w-[1240px] my-0 mx-auto w-full py-20 px-3 sm:px-4 md:px-8 xl:px-0 md:py-40 bg-gradient-to-b from-white to-gray-300 rounded-2xl justify-around items-center flex flex-col">
+  <section class=" max-w-5xl my-0 mx-auto w-full py-20 px-3 sm:px-4 md:px-8 xl:px-0 md:py-40 bg-gradient-to-b from-white to-gray-300 rounded-2xl justify-around items-center flex flex-col">
     
     <aside class="flex-col justify-start items-center gap-6 flex">
       <h1 class="text-orange text-4xl md:text-7xl text-center font-black font-redhat">Featured<span class="text-gray-900 font-black "> Works</span></h1>
@@ -22,13 +23,22 @@ import {FormContainer }from '../../components/FormContainer'
   
     <CarefullyPicked client:only="react"/>
   
+    <section class="relative w-full">
+      <Vector display={"top-0 left-0"} />
     <PortfolioForm/>
-  <section>
     <FormContainer client:only="react"/>
+    <Vector display={"right-0 -bottom-8 rotate-180"}/>
+    <Vector display={"left-0 -bottom-[40%] sm:hidden"}/>
+  </section>
+
+  <section class="mb-10 md:mb-20 max-w-5xl my-0 mx-auto px-3 sm:px-4 md:px-8 xl:px-0">
+<FAQLayout />
   </section>
 
   <section>
     <SocialProof/>
   </section>
+
+
 </main>
 </Layout>
