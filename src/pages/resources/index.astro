@@ -1,11 +1,12 @@
 ---
 import MainLayout from "../../layouts/Layout.astro";
-import "./styles.scss";
+import "../../components/resources-module/styles.scss";
 import Card from "../../components/RessourcesCard/index.astro";
 import FAQ from "../../components/ResourcesFAQ/FAQ.astro";
 import { FormContainer } from "../../components/FormContainer";
 import FAQLayout from "../../components/ResourcesFAQ/FAQLayout.astro";
 import CompaniesSection from "../../components/home/CompaniesSection.astro";
+import SocialProof from "../../components/SocialProof.astro";
 ---
 
 <MainLayout title="Resources">
@@ -69,10 +70,13 @@ import CompaniesSection from "../../components/home/CompaniesSection.astro";
 			/>
 		</div>
 	</section>
-	<section aria-labelledby="contact">
-		<header>
-			<h2 id="contact"
-				>Let's create something special together.</h2
+	<section
+		aria-labelledby="res-contact"
+		class="res-contact">
+		<header class="res-header">
+			<h2 id="res-contact"
+				>Let's <span class="orange">create</span> something
+				special together.</h2
 			>
 			<p
 				>In just 48 hours, our experts will meticulously assess
@@ -80,14 +84,11 @@ import CompaniesSection from "../../components/home/CompaniesSection.astro";
 				enhancing your brand and visual storytelling.</p
 			>
 		</header>
-		<div class="links">
-			<a href="/">Business</a>
-			<a href="/">Individual</a>
-		</div>
+
 		<div class="">
 			<FormContainer />
 		</div>
 	</section>
 	<FAQLayout />
-	<CompaniesSection />
+	<SocialProof />
 </MainLayout>
