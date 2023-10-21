@@ -1,0 +1,27 @@
+// common device break point
+$breakpoints: (
+	desktop: 1472px,
+	tablet: 768px,
+	mobile: 320px,
+	mobileLandscape: 568px,
+);
+
+@mixin custom-media-query($device-type, $width) {
+	@if $device-type == "mobile" {
+		@media (max-width: $width) {
+			@content;
+		}
+	} @else if $device-type == "desktop" {
+		@media (min-width: $width) {
+			@content;
+		}
+	} @else {
+		@warn 'Invalid argument for custom-media-query mixin. Please use mobile or desktop.';
+	}
+}
+
+$base-font-size: 16px;
+
+@function px-to-rem($px, $suffix: 1rem) {
+	@return calc(($px / $base-font-size) * $suffix);
+}

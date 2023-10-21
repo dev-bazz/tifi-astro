@@ -1,0 +1,42 @@
+---
+import FAQ from "./FAQ.astro";
+import "./styles.scss";
+---
+
+<section class="resources-faq-container">
+	<div class="resources-container">
+		<header>
+			<h2>FAQ</h2>
+		</header>
+		<div class="res-layout">
+			<div class="left">
+				<FAQ
+					title="What services does tifi.tv offer"
+					bigPadding={true}
+				/>
+				<FAQ
+					title="How can I get started with your services?"
+					bigPadding={true}
+				/>
+				<FAQ
+					title="What is the typical process when working with tifi.tv?"
+					bigPadding={true}
+				/>
+				<FAQ
+					title="Do you have any case studies or success stories to share?"
+					bigPadding={true}
+				/>
+			</div>
+			<div class="right">
+				<FAQ title="What services does tifi.tv offer" />
+				<FAQ title="How can I get started with your services?" />
+				<FAQ
+					title="What is the typical process when working with tifi.tv?"
+				/>
+				<FAQ
+					title="Do you have any case studies or success stories to share?"
+				/>
+			</div>
+		</div>
+	</div>
+</section>

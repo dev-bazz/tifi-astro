@@ -231,6 +231,70 @@
   }
 }
 
+.impact-business-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-items: center;
+  background: #fcfcfd;
+  height: 42.0625rem;
+  width: 100%;
+  padding: 6rem 10rem;
+
+  .impact-title-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    .impact-title {
+      color: #101828;
+      font-size: 4rem;
+      font-weight: 600;
+    }
+
+    .impact-desc {
+      color: #344054;
+      font-size: 1rem;
+      line-height: 160%;
+    }
+  }
+
+  .impact-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background: #f2f4f7;
+    border-radius: 1.5rem;
+    width: 100%;
+    padding: 1.5rem 1rem;
+
+    div {
+      width: 18rem;
+
+      .stats-number {
+        color: #101828;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 700;
+
+        span {
+          color: #ff601f;
+        }
+      }
+
+      .stats-desc {
+        color: #344054;
+        text-align: center;
+        font-size: 1.125rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .business-title-card {
     height: 25.6875rem;
@@ -321,6 +385,33 @@
       }
     }
   }
+
+  .impact-business-section {
+    gap: 3rem;
+    height: 40rem;
+    width: 100%;
+    padding: 4.5rem 2.5rem;
+
+    .impact-title-container {
+      .impact-title {
+        font-size: 3rem;
+      }
+    }
+
+    .impact-stats {
+      div {
+        width: 14.1rem;
+
+        .stats-number {
+          font-size: 3rem;
+        }
+
+        .stats-desc {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -371,6 +462,35 @@
       .solution-card {
         .solution-card-title {
           font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .impact-business-section {
+    height: 52rem;
+    width: 100%;
+    padding: 4rem 1rem;
+
+    .impact-title-container {
+      .impact-title {
+        font-size: 2rem;
+      }
+    }
+
+    .impact-stats {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      div {
+        width: 14.1rem;
+
+        .stats-number {
+          font-size: 3rem;
+        }
+
+        .stats-desc {
+          font-size: 1rem;
         }
       }
     }
