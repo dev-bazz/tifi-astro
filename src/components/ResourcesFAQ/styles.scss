@@ -1,5 +1,33 @@
 @use "../../pages/resources/sass/utilities.scss" as *;
 
 .resources-faq {
-	max-width: px-to-rem(1200px);
+	max-width: px-to-rem(365px);
+	list-style: none;
+	user-select: none;
+	border-radius: 8px;
+	background: var(--gray-300, #f2f4f7);
+	padding: px-to-rem(24px);
+	transition: all 0.3s;
+	summary {
+		list-style: none;
+		cursor: pointer;
+	}
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-body {
+		height: 0;
+		overflow-y: hidden;
+		transition: all 0.8s ease-in-out;
+	}
+}
+
+.resources-faq[open] {
+	.resources-faq-body {
+		height: fit-content;
+		transition: all 0.8s ease-in-out;
+	}
 }
