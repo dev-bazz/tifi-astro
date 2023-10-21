@@ -1,4 +1,4 @@
-@use "../../pages/resources/sass/utilities.scss" as *;
+@use "../resources-module/sass/utilities.scss" as *;
 
 .resources-faq {
 	max-width: px-to-rem(584px);
@@ -70,6 +70,8 @@
 
 // Layout Styes
 .resources-faq-container {
+	padding-block: px-to-rem(100px);
+	border-top: px-to-rem(1px) solid #667085;
 	h2 {
 		color: var(--gray-1000, #1d2939);
 		text-align: center;

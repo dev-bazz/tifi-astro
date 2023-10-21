@@ -1,11 +1,12 @@
 ---
 import MainLayout from "../../layouts/Layout.astro";
-import "./styles.scss";
+import "../../components/resources-module/styles.scss";
 import Card from "../../components/RessourcesCard/index.astro";
 import FAQ from "../../components/ResourcesFAQ/FAQ.astro";
 import { FormContainer } from "../../components/FormContainer";
 import FAQLayout from "../../components/ResourcesFAQ/FAQLayout.astro";
 import CompaniesSection from "../../components/home/CompaniesSection.astro";
+import SocialProof from "../../components/SocialProof.astro";
 ---
 
 <MainLayout title="Resources">
@@ -89,5 +90,5 @@ import CompaniesSection from "../../components/home/CompaniesSection.astro";
 		</div>
 	</section>
 	<FAQLayout />
-	<CompaniesSection />
+	<SocialProof />
 </MainLayout>
