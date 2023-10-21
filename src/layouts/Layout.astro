@@ -2,7 +2,8 @@
 interface Props {
     title: string;
 }
-
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 const { title } = Astro.props;
 ---
 
@@ -13,17 +14,17 @@ const { title } = Astro.props;
         <meta name="description" content="Astro description" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Noto+Sans:wght@100;200;300&family=Plus+Jakarta+Sans:wght@200;300;400&family=Red+Hat+Display:ital,wght@0,300;0,400;1,400&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Noto+Sans:wght@200;300;400;500;600;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
     <body>
+
+		<!-- <Header /> -->
         <slot />
+		<Footer />
     </body>
 </html>
 <style is:global>
