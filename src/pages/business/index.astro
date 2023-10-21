@@ -1,13 +1,13 @@
 ---
 import MainLayout from '../../layouts/Layout.astro'
 import CardLayout from '../../components/business/CaseStudyCardLayout.astro'
-import { BusinessForm } from '../../components/BusinessForm'
+import { FormContainer } from '../../components/FormContainer';
 import FAQLayout from "../../components/ResourcesFAQ/FAQLayout.astro";
 import SocialProof from "../../components/SocialProof.astro";
 import './business.scss'
 ---
 
-<MainLayout title="For Businesses">
+<MainLayout title="For Business">
 	<main class="flex flex-col justify-center items-center">
     <section class="business-title-card">
 			<h1 class="business-title font-redhat">For <span>Businesses</span></h1>
@@ -127,7 +127,7 @@ import './business.scss'
 				<p class="lg:hidden block">In just 48 hours, our experts will meticulously assess your video content and reveal untapped opportunities for enhancing your <span class="font-bold">brand</span> and visual storytelling.</p>
 			</div>
 			<div class="business-form-container">
-				<BusinessForm />
+				<FormContainer client:load />
 			</div>
 		</section>
 		<FAQLayout />
