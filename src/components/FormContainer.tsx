@@ -45,7 +45,7 @@ export const FormContainer = () => {
 				</div>
 			</div>
 
-			<div className="my-16 max-w-3xl w-full mx-auto p-4 font-plus">
+			<div className="my-16 max-w-2xl w-full mx-auto p-4 font-plus">
 				{formType === "business" ? (
 					<BusinessForm />
 				) : (
