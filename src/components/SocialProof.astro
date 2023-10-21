@@ -1,0 +1,36 @@
+---
+const companiesLogo = [
+    { imageUrl: "/air-bnb.svg", company: "Airbnb" },
+    { imageUrl: "/linear.svg", company: "Linear" },
+    { imageUrl: "/paypal.svg", company: "PayPal" },
+    { imageUrl: "/uber.svg", company: "Uber" },
+    { imageUrl: "/youtube.svg", company: "YouTube" },
+    { imageUrl: "/zoom.svg", company: "Zoom" },
+];
+---
+
+<section class="w-full border ">
+    <div
+        class="px-4 flex flex-col gap-8 justify-center items-center py-16 bg-[#FF4D002B]"
+    >
+        <h3 class="text-[#1D2939] text-center text-base font-noto font-medium">Join 4,000+ companies already growing</h3>
+        <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6
+        gap-8 justify-between items-center border"
+        >
+            {
+                companiesLogo.map((company) => (
+                    
+                  <div
+                  class="flex justify-center items-center h-12"
+                  >
+                    <img src={company.imageUrl} alt={company.company} 
+                    class="h-full"
+                    />
+                   
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
