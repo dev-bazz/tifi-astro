@@ -1,4 +1,4 @@
-@use "../../pages/resources/sass/utilities.scss" as *;
+@use "../resources-module/sass/utilities.scss" as *;
 
 .resource-card {
 	padding: px-to-rem(16px);
