@@ -80,3 +80,5 @@ export const IndividualForm = () => {
         </form>
     );
 };
+
+export default IndividualForm;
