@@ -15,7 +15,7 @@ const navLinks = [
 		sub: [
 			{
 				name: "Individuals",
-				link: "/indvidual",
+				link: "/individual",
 			},
 			{
 				name: "Businesses",
