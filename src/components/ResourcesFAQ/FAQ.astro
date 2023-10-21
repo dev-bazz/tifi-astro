@@ -3,6 +3,7 @@ import "./styles.scss";
 interface Props {
 	title?: string;
 	body?: string;
+	bigPadding?: boolean;
 }
 
 const {
@@ -11,10 +12,12 @@ const {
 			Dolorem voluptas voluptatem laboriosam expedita natus odio
 			rem accusamus enim possimus doloremque esse aliquam
 			aperiam, vero maxime alias? Voluptatem perspiciatis qui ad.`,
+	bigPadding = false,
 } = Astro.props;
 ---
 
-<details class="resources-faq">
+<details
+	class:list={["resources-faq", { bigPadding: bigPadding }]}>
 	<summary>
 		<div class="resources-faq-header"
 			><h3>{title}</h3>
