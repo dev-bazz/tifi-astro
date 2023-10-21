@@ -1,10 +1,61 @@
-<section>
-    <p>
-        Your vision
-        <span>...is our mission</span>
-    </p>
+---
+import './style/business.scss'
+import Button from './Button.astro';
+---
+<section class="mt-12">
+    <h2 class="bg-[#101828] px-4 py-[5rem] font-[800] text-5xl text-[#FFFFFF36] text-center uppercase leading-[1.5] md:text-6xl md:text-start md:py-[9rem] xl:text-7xl xl:py-[14rem]">
+        <p class="flex flex-col mx-auto md:max-w-[46rem] xl:max-w-[56rem]">
+            Your vision
+            <span class="inline-block self-end">...is our mission</span>
+        </p>
+    
+    </h2>
 
-    <div>
+    
+		<section class="custom-solutions-section">
+			<div class="solutions-title-container">
+				<p class="solutions-title-text hidden md:block font-noto">WHO WE HELP</p>
+				<p class="solutions-title-text block md:hidden font-noto">WHO WE HELP</p>
+				<h3 class="solutions-title font-redhat">We offer Custom Solutions for...</h3>
+			</div>
+			<div class="solution-cards">
+				<div class="solution-card bg-[#F2F4F7]">
+					<h4 class="solution-card-title">Businesses and Brands</h4>
+                    <p>
+                        We're dedicated to helping businesses harness the true potential of video content to connect with their audience, drive conversions, and elevate their brand presence.
+                    </p>
+					<ul class="solution-list">
+						<li><img src="/tick-circle.svg"/> Startups</li>
+						<li><img src="/tick-circle.svg"/> Retail and E-commerce</li>
+						<li><img src="/tick-circle.svg"/> Real Estate</li>
+						<li><img src="/tick-circle.svg"/> Entertainment and Media</li>
+						<li><img src="/tick-circle.svg"/> Education and E-Learning</li>
+						<li><img src="/tick-circle.svg"/> And many more</li>
+					</ul>
+					<p>We&apos;re here to help you. Reach out to us as soon as possible!</p>
+
+                    <Button text="See Businesses" classNames="mt-4 mx-0 border border-gray-600 bg-transparent text-gray-1000" iconPath="/dark-arrow.svg"/>
+				</div>
+
+				<div class="solution-card bg-[#fcece7]">
+					<h4 class="solution-card-title font-noto">Individuals</h4>
+                    <p>
+                        Whether you're a content creator, a filmmaker, or someone with a passion for video, we're here to help you turn your vision into captivating reality, enhancing your storytelling, and making every frame count.
+                    </p>
+					<ul class="solution-list">
+						<li><img src="/tick-circle.svg"/> Content Creators</li>
+						<li><img src="/tick-circle.svg"/> Travel Enthusiasts</li>
+						<li><img src="/tick-circle.svg"/> Special Occasion Celebrants</li>
+						<li><img src="/tick-circle.svg"/> Email Marketing Videos</li>
+						<li><img src="/tick-circle.svg"/> Creative Artists</li>
+						<li><img src="/tick-circle.svg"/> And many more</li>
+					</ul>
+                    <Button text="See Individuals" classNames="mt-4 mx-0 border border-gray-600 bg-transparent text-gray-1000" iconPath="/dark-arrow.svg" />
+				</div>
+			</div>
+		</section>
+    
+    <!-- <div>
         <span>who we help</span>
         <h2>We offer custom solutions for...</h2>
 
@@ -42,5 +93,5 @@
             <a href="">See Individuals</a>
         </div>
         
-    </div>
+    </div> -->
 </section>

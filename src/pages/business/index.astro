@@ -1,5 +1,9 @@
 ---
 import MainLayout from '../../layouts/Layout.astro'
+import CardLayout from '../../components/business/CaseStudyCardLayout.astro'
+import { BusinessForm } from '../../components/BusinessForm'
+import FAQLayout from "../../components/ResourcesFAQ/FAQLayout.astro";
+import SocialProof from "../../components/SocialProof.astro";
 import './business.scss'
 ---
 
@@ -100,6 +104,33 @@ import './business.scss'
 				<h3 class="case-studies-title font-redhat">Case <span>Studies</span></h3>
 				<p class="case-studies-desc font-noto">Stories of transformation, engagement, and success.</p>
 			</div>
+			<CardLayout />
 		</section>
+		<section class="elevating-your-brand-section">
+			<div>
+				<div class="elevating-your-brand-title-container">
+					<h3 class="elevating-your-brand-title font-redhat"> Elevating Your Brand&apos;s Identity</h3>
+					<p class="elevating-your-brand-desc font-noto">Your brand&apos;s identity is at the core of your business, and it&apos;s our privilege to enhance it through video storytelling. We believe that video is the medium that connects brands to their audience, and we're here to craft your unique narrative.</p>
+				</div>
+				<div class="elevating-your-brand-lower-container">
+					<div />
+					<p>Our expertise in video storytelling goes beyond the visual. It&apos;s about weaving a narrative that speaks directly to your audience, creating a connection that goes beyond words. With tifi.tv, your branding and marketing efforts are not just campaigns; they&apos;re stories waiting to be told.</p>
+				</div>
+			</div>
+		</section>
+		<section class="business-form-section">
+			<div class="business-title-container">
+				<h3 class="lg:block hidden">LET&apos;S CREATE SOMETHING TOGETHER</h3>
+				<h3 class="lg:hidden md:block hidden">LET US KNOW HOW WE CAN HELP YOU.</h3>
+				<h3 class="md:hidden block">LET&apos;S <span class="text-[#FF601F]">CREATE</span> SOMETHING SPECIAL TOGETHER</h3>
+				<p class="lg:block hidden">It's time to turn your vision into reality. The possibilities are endless when it comes to visual storytelling. If you're ready to embark on a project that can transform your business, we're here to make it happen.</p>
+				<p class="lg:hidden block">In just 48 hours, our experts will meticulously assess your video content and reveal untapped opportunities for enhancing your <span class="font-bold">brand</span> and visual storytelling.</p>
+			</div>
+			<div class="business-form-container">
+				<BusinessForm />
+			</div>
+		</section>
+		<FAQLayout />
+		<SocialProof />
 	</main>
 </MainLayout>
