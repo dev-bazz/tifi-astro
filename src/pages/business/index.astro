@@ -4,14 +4,43 @@ import './business.scss'
 ---
 
 <MainLayout title="For Businesses">
-	<main class="business flex justify-center">
+	<main class="flex flex-col justify-center items-center">
     <section class="business-title-card">
 			<h1 class="business-title font-redhat">For <span>Businesses</span></h1>
 			<p class="business-desc font-noto">We offer a rich palette of services designed to meet the diverse needs of businesses. Whether it's unveiling a new product, igniting your brand's presence, or enhancing internal communications, our video editing services are tailored to your specific objectives.</p>
 		</section>
-		<section>
-			<h2>Our Palette of Corporate Video Services</h2>
-			<p></p>
+		<section class="corporate-service-section">
+			<div>
+				<div class="corporate-title-container">
+					<h2 class="corporate-title font-redhat">Our Palette of <span>Corporate</span> Video Services</h2>
+					<p class="corporate-desc font-noto">Unlocking the Power of Visual Storytelling for Your Business</p>
+				</div>
+				<div class="business-service-cards">
+					<div class="business-service-card">
+						<img src="/business-img/business-img-1.png"/>
+						<div class="business-service-text font-noto">
+							<h3 class="business-service-title">Product <span>Demonstrations</span></h3>
+							<p class="business-service-desc">Present your products in their best light with dynamic and engaging demonstrations that showcase their features and benefits.</p>
+						</div>
+					</div>
+					<div class="business-service-card">
+						<img src="/business-img/business-img-2.png"/>
+						<div class="business-service-text font-noto">
+							<h3 class="business-service-title">Promotional <span>Videos</span></h3>
+							<p class="business-service-desc">Craft compelling promotional videos that captivate your audience, drive conversions, and enhance brand visibility.</p>
+						</div>
+					</div>
+					<div class="business-service-card">
+						<img src="/business-img/business-img-3.png"/>
+						<div class="business-service-text font-noto">
+							<h3 class="business-service-title"><span>Internal</span> Communications</h3>
+							<p class="business-service-desc">Foster strong internal connections through effective video communication, making sure your message resonates with your team.</p>
+						</div>
+					</div>
+				</div>
+				<p class="corporate-bottom-text">We believe that every video has a story to tell, and every story has a message that connects. Our corporate video services are not just about visuals; they're about creating a lasting impact on your branding and marketing goals.</p>
+				<button class="lets-talk-button font-inter">Let's Talk <img src="/lets-talk-arrow.svg" /></button>
+			</div>
 		</section>
 	</main>
 </MainLayout>
