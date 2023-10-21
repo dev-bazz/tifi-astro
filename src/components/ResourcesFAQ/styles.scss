@@ -1,7 +1,7 @@
 @use "../../pages/resources/sass/utilities.scss" as *;
 
 .resources-faq {
-	max-width: px-to-rem(365px);
+	max-width: px-to-rem(584px);
 	list-style: none;
 	user-select: none;
 	border-radius: 8px;
@@ -16,12 +16,28 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: px-to-rem(16px);
+
+		h3 {
+			color: var(--gray-1000, #1d2939);
+			font-feature-settings: "clig" off, "liga" off;
+			font-size: 22px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 28px; /* 127.273% */
+		}
 	}
 
 	&-body {
 		height: 0;
+		margin-top: px-to-rem(16px);
 		overflow-y: hidden;
 		transition: all 0.8s ease-in-out;
+		padding-right: px-to-rem(42px);
+	}
+
+	.open {
+		display: none;
 	}
 }
 
@@ -29,5 +45,11 @@
 	.resources-faq-body {
 		height: fit-content;
 		transition: all 0.8s ease-in-out;
+	}
+	.open {
+		display: flex;
+	}
+	.closed {
+		display: none;
 	}
 }
