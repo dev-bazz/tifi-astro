@@ -16,7 +16,7 @@ const CarefullyPicked = () => {
 
   return (
     <section className="w-full py-24 mt-14 bg-gray-300 flex-col justify-start ">
-      <aside className="max-w-5xl my-0 mx-auto items-center gap-12 flex flex-col px-3 sm:px-4 md:px-8 xl:px-0">
+      <aside className="max-w-[73rem] my-0 mx-auto items-center gap-12 flex flex-col px-3 sm:px-4 md:px-8 xl:px-0">
         <h2 className=" text-center text-gray-1100 text-3xl md:text-6xl font-semibold font-redhat">
           Carefully Picked Videos
         </h2>
@@ -86,7 +86,7 @@ const CarefullyPicked = () => {
                 </p>
 
                 <svg
-                  className="w-20 h-20 p-4 z-30 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 absolute bg-gray-50 rounded-[50%] shadow"
+                  className="w-14 h-14 p-4 z-30 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 absolute bg-gray-50 rounded-[50%] shadow"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -115,8 +115,23 @@ const CarefullyPicked = () => {
                   This could be your project as a part of our amazing curation.
                 </p>
 
-                <button className="text-gray-1100 text-base font-extrabold font-inter leading-normal px-5 py-3 bg-gray-300 rounded-lg shadow">
+                <button className="text-gray-1100 text-base font-extrabold font-inter leading-normal px-5 py-3 bg-gray-300 rounded-lg shadow flex gap-3">
                   LET'S TALK!
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 5L5 19M19 5V18.1765M19 5H5.82353"
+                      stroke="#101828"
+                      stroke-width="3"
+                      stroke-linecap="square"
+                      stroke-linejoin="bevel"
+                    />
+                  </svg>
                 </button>
               </aside>
             </li>
