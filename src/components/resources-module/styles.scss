@@ -138,7 +138,7 @@
 	.res-tab {
 		display: flex;
 		gap: px-to-rem(16px);
-		padding-block: px-to-rem(20px);
+		min-height: 50px;
 		border-bottom: 1px solid var(--gray-700-main, #667085);
 	}
 
@@ -191,5 +191,25 @@
 
 	.des-body {
 		margin-top: 12px;
+	}
+
+	.res-tab-title {
+		color: var(--gray-900, #344054);
+		text-align: center;
+		font-family: Noto Sans;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+
+		&:is(.active) {
+			color: #ff601f;
+			text-align: center;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			border-bottom: 4px solid #ff601f;
+		}
 	}
 }
