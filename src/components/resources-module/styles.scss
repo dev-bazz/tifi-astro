@@ -138,6 +138,7 @@
 	.res-tab {
 		display: flex;
 		gap: px-to-rem(16px);
+		flexw-wrap: wrap;
 		min-height: 50px;
 		border-bottom: 1px solid var(--gray-700-main, #667085);
 	}
