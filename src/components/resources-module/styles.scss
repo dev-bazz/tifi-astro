@@ -145,6 +145,17 @@
 	.res-select {
 		display: flex;
 		gap: px-to-rem(16px);
+
+		select {
+			border-radius: 8px;
+			border: 1px solid var(--gray-500, #d0d5dd);
+			background: var(--base-white, #fff);
+			display: flex;
+			width: 169px;
+			padding: 10px 14px;
+			align-items: center;
+			gap: 8px;
+		}
 	}
 
 	.res-videos {
