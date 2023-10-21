@@ -32,47 +32,10 @@ const navLinks = [
         <div>
             <img src="/tifi.svg" alt="Tifi Logo" class="w-[44px] h-[20px]" />
         </div>
-        <!-- <nav>
-            <ul class="flex items-center space-x-8">
-                {
-                    navLinks.map((link, index) => (
-                        <li class={`${link.sub && "group"} relative`}>
-                            <a
-                                href={link.link}
-                                class={`text-[#2B2B2B] hover:text-[#FF601F] transition-all duration-300 ease-in-out  
-                                
-                                `}
-                            >
-                                {link.name}
-                            </a>
-                            {link.sub && (
-                                <ul
-                                    class="absolute top-10 left-0 bg-white shadow-md rounded-2xl py-4 px-5
-                                     hidden group-hover:block hover:block
-                                    "
-                                >
-                                    {link.sub.map((subLink, index) => (
-                                        <li>
-                                            <a
-                                                href={subLink.link}
-                                                class="text-[#2B2B2B] hover:text-[#FF601F] transition-all duration-300 ease-in-out"
-                                            >
-                                                {subLink.name}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                        </li>
-                    ))
-                }
-            </ul>
-        </nav> -->
-
         <nav>
             <ul class="flex items-center space-x-8">
                 {
-                    navLinks.map((link, index) => (
+                    navLinks.map((link) => (
                         <li class={`${link.sub && "group"} relative`}>
                             <a
                                 href={link.link}
