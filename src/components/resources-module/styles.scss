@@ -93,6 +93,12 @@
 
 	.res-header {
 		max-width: px-to-rem(1180px);
+
+		p {
+			max-width: 80ch;
+			margin-bottom: px-to-rem(50px);
+			margin-inline: auto;
+		}
 		.orange {
 			color: #ff601f;
 		}
@@ -115,19 +121,107 @@
 
 .res-featured {
 	padding-block: px-to-rem(60px);
+	h2 {
+		color: var(--gray-1000, #1d2939);
+		text-align: center;
+		padding-block: px-to-rem(50px);
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 160%; /* 51.2px */
+	}
 	.res-tab-container {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 	.res-tab {
 		display: flex;
 		gap: px-to-rem(16px);
-		padding-block: px-to-rem(20px);
+		flexw-wrap: wrap;
+		min-height: 50px;
 		border-bottom: 1px solid var(--gray-700-main, #667085);
 	}
 
 	.res-select {
 		display: flex;
 		gap: px-to-rem(16px);
+
+		select {
+			border-radius: 8px;
+			border: 1px solid var(--gray-500, #d0d5dd);
+			background: var(--base-white, #fff);
+			display: flex;
+			width: 169px;
+			padding: 10px 14px;
+			align-items: center;
+			gap: 8px;
+		}
+	}
+
+	.res-videos {
+		display: grid;
+		place-items: center;
+		gap: 16px;
+		.v {
+			border-radius: 8px;
+			overflow: hidden;
+			width: 100%;
+		}
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(px-to-rem(346px), auto)
+		);
+	}
+	.res-video {
+		max-width: px-to-rem(376px);
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.des-tag2 {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		color: var(--gray-900, #101828);
+
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 32px; /* 133.333% */
+	}
+
+	.des-tag1 {
+		color: #ff601f;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 20px; /* 142.857% */
+	}
+
+	.des-body {
+		margin-top: 12px;
+	}
+
+	.res-tab-title {
+		color: var(--gray-900, #344054);
+		text-align: center;
+		font-family: Noto Sans;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+
+		&:is(.active) {
+			color: #ff601f;
+			text-align: center;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			border-bottom: 4px solid #ff601f;
+		}
 	}
 }
