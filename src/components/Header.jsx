@@ -14,23 +14,20 @@ const navLinks = [
         link: '#',
         sub: [
             {
-                name: 'HNG Intenrship',
-                link: '#',
+                name: 'Individuals',
+                link: '/individual',
             },
             {
-                name: 'HNG Intenrship',
-                link: '#',
+                name: 'Businesses',
+                link: '/business',
             },
-            {
-                name: 'HNG Intenrship',
-                link: '#',
-            },
+           
 
         ],
     },
     {
         name: 'Resources',
-        link: '#',
+        link: '/resources',
     },
 ];
 
@@ -39,7 +36,7 @@ export const Header = () => {
     return (
         <header 
         // add blur to header
-        className='px-4 bg-white bg-opacity-60 backdrop-filter backdrop-blur-sm fixed right-0 left-0 top-0'
+        className='sm:px-4 bg-white bg-opacity-60 backdrop-filter backdrop-blur-sm fixed right-0 left-0 top-0'
         >
             <div className="  font-noto md:mt-8 flex justify-between items-center md:rounded-2xl border-b md:border  md:border-[##EAECF0] bg-white md:shadow-md max-w-[73rem] mx-auto py-4 px-5">
                 <div
