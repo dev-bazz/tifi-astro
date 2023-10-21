@@ -54,3 +54,15 @@
 		}
 	}
 }
+
+.cards {
+	border-top: 1px solid var(--gray-700-main, #667085);
+	background: var(--gray-300, #f2f4f7);
+	padding-block: px-to-rem(100px);
+
+	.resources-container {
+		display: flex;
+		flex-direction: column;
+		gap: px-to-rem(48px);
+	}
+}

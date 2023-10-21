@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../../layouts/Layout.astro";
 import "./styles.scss";
+import Card from "../../components/RessourcesCard/index.astro";
 ---
 
 <MainLayout title="Resources">
@@ -45,12 +46,13 @@ import "./styles.scss";
 		</div>
 	</section>
 
-	<section aria-label="card">
+	<section
+		aria-label="card"
+		class="cards">
 		<!-- Resources -->
 		<div class="resources-container">
-			<div class="">
-				<p>Hello</p>
-			</div>
+			<Card />
+			<Card secondary={true}  title="Individuals" body={`Whether you're a content creator, a filmmaker, or someone with a passion for video, our resources are designed to be your creative compass. We're here to help you turn your vision into captivating reality, enhancing your storytelling, and making every frame count.`} href="" img="individual.png"/>
 		</div>
 	</section>
 </MainLayout>
