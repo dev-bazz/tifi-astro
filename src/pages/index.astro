@@ -5,21 +5,25 @@ import HeroSection from '../components/home/HeroSection.astro';
 import CompaniesSection from '../components/home/CompaniesSection.astro';
 import ServicesSection from '../components/home/ServicesSection.astro';
 import PorfolioSection from '../components/home/PortfolioSection.astro';
+import VisionSection from '../components/home/VisionSection.astro';
+import ProcessSection from '../components/home/ProcessSection.astro';
 import Card from '../components/Card.astro';
 ---
 
 <Layout title="Tifi">
-	<Header />
-	<main>
+	<!-- <Header /> -->
+	<main class="font-redhat">
 		<HeroSection />	
 		<CompaniesSection />
 		<ServicesSection />
 		<PorfolioSection />
+		<VisionSection />
+		<ProcessSection />
 	</main>
 </Layout>
 
-<style>
-	main {
+<!-- <style>
+	/* main {
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
@@ -73,5 +77,5 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
-	}
-</style>
+	} */
+</style> -->

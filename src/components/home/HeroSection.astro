@@ -1,7 +1,15 @@
-<section id="hero">
-    <h1>Crafting visual stories <span> beyond</span> imagination</h1>
-    <p>Elevate your brand, Experience the power of storytelling through the lens of creativity and innocation</p>
-    <a href="">
-        Let's talk
-    </a>
+---
+import Button from "./Button.astro";
+---
+
+<section id="hero" class="h-[28rem] p-4 grid gap-4 place-content-center text-center">
+    <h1 class="font-bold text-3xl">Crafting visual stories <span class="text-orange"> beyond</span> imagination</h1>
+    <p class="mt-2 text-base">Elevate your brand, Experience the power of storytelling through the lens of creativity and innocation</p>
+    <Button text="Let's Talk" />
 </section>
+
+<style>
+    section{
+        background: url('/images/hero-mobile.png') 50% 100% no-repeat;
+    }
+</style>
