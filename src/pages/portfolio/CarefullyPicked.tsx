@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import play from './portfolio-icons/play.svg'
 
 const CarefullyPicked = () => {
   const [active, setActive] = useState(1);
@@ -56,11 +57,24 @@ const CarefullyPicked = () => {
                 <p className="bottom-6 left-10 right-5 absolute text-gray-100 text-2xl font-bold font-noto leading-10">
                   A Day in the life of a Software Developer
                 </p>
-                <div className="w-20 h-20 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 absolute bg-gray-50 rounded-3xl shadow justify-center items-center inline-flex">
-                  <div className="grow shrink basis-0 self-stretch justify-center items-center inline-flex">
-                    <div className="w-6 h-6 relative"></div>
-                  </div>
-                </div>
+
+                <svg
+                  className="w-20 h-20 p-4 z-30 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 absolute bg-gray-50 rounded-[50%] shadow"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.49 9.59989L5.6 16.7699C4.9 17.1899 4 16.6899 4 15.8699V7.86989C4 4.37989 7.77 2.19989 10.8 3.93989L15.39 6.57989L17.48 7.77989C18.17 8.18989 18.18 9.18989 17.49 9.59989Z"
+                    fill="#101828"
+                  />
+                  <path
+                    d="M18.0898 15.4599L14.0398 17.7999L9.99981 20.1299C8.54981 20.9599 6.90981 20.7899 5.71981 19.9499C5.13981 19.5499 5.20981 18.6599 5.81981 18.2999L18.5298 10.6799C19.1298 10.3199 19.9198 10.6599 20.0298 11.3499C20.2798 12.8999 19.6398 14.5699 18.0898 15.4599Z"
+                    fill="#101828"
+                  />
+                </svg>
               </li>
             ))}
             <li className="w-full h-96 relative rounded-lg overflow-hidden">
