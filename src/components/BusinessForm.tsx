@@ -9,7 +9,7 @@ export const BusinessForm = () => {
     });
     const [buttonDisabled, setButtonDisabled] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setButtonDisabled(true);
         console.log(formData);
@@ -18,7 +18,7 @@ export const BusinessForm = () => {
         }, 2000);
     };
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
@@ -57,7 +57,7 @@ export const BusinessForm = () => {
                     className="text-base border border-[#98A2B3] rounded-[8px] px-[14px] py-[16px]
                  placeholder-[#98A2B3] focus:outline-none focus:border-[#344054]
                  "
-                    type="text"
+                   
                     name="message"
                     placeholder="Type your message ..."
                     value={formData.message}

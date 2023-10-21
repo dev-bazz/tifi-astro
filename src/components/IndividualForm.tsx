@@ -8,17 +8,18 @@ export const IndividualForm = () => {
         message: "",
     });
     const [buttonDisabled, setButtonDisabled] = useState(false);
-
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setButtonDisabled(true);
-        const form = e.target;
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
-        console.log(data);
+        console.log(formData);
         setTimeout(() => {
             setButtonDisabled(false);
         }, 2000);
+    };
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
     return (
@@ -27,8 +28,11 @@ export const IndividualForm = () => {
                 label="Full Name"
                 type="text"
                 name="full_name"
+                value={formData.full_name}
                 placeholder="Enter full name"
+                onChange={handleChange}
                 required
+               
             />
 
             <Input
@@ -36,6 +40,8 @@ export const IndividualForm = () => {
                 type="email"
                 name="email"
                 placeholder="Enter email address"
+                value={formData.email}
+                onChange={handleChange}
                 required
             />
 
@@ -43,6 +49,8 @@ export const IndividualForm = () => {
                 label="Subject (optional)"
                 type="text"
                 name="subject"
+                value={formData.subject}
+                onChange={handleChange}
                 placeholder="Enter subject"
             />
 
@@ -52,7 +60,7 @@ export const IndividualForm = () => {
                  className="text-base border border-[#98A2B3] rounded-[8px] px-[14px] py-[16px]
                  placeholder focus:outline-none focus:border-[#344054]
                  "
-                    type="text"
+                    
                     name="message"
                     placeholder="Type your message ..."
                     required
