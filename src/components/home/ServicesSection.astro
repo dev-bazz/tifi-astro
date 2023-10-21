@@ -2,10 +2,14 @@
 import Button from "./Button.astro";
 ---
 <section class="mt-6 text-center">
-    <h2 class="bg-[#101828] px-4 py-12 font-[800] text-5xl text-[#FFFFFF36] uppercase leading-[1.5]">We are more than just a website</h2>
+    <h2 class="bg-[#101828] px-4 py-[5rem] font-[800] text-5xl text-[#FFFFFF36] uppercase leading-[1.5] md:text-6xl md:py-[9rem] xl:text-7xl xl:py-[14rem]">
+        <span class="block mx-auto md:max-w-[46rem] xl:max-w-[56rem]">
+            We are more than just a website
+        </span>
+    </h2>
 
-    <div class="px-4 py-8 grid gap-6">
-        <h3 class="font-semibold text-2xl text-gray-1100">...we are your creative partner in <span class="text-orange">visual</span> storytelling...</h3>
+    <div class="mx-auto max-w-[63.75rem] px-4 py-8 grid gap-6 sm:grid-cols-2 sm:py-16 md:grid-cols-3">
+        <h3 class="col-span-full mx-auto mb-6 font-semibold text-2xl text-gray-1100 md:text-4xl lg:text-5xl lg:max-w-[48rem]">...we are your creative partner in <span class="text-orange">visual</span> storytelling...</h3>
 
         <div class='bg-gray-300 p-6 grid justify-center items-center gap-2'>
             <img class="mx-auto" src="/images/video-icon.svg" alt="icon">
@@ -43,6 +47,6 @@ import Button from "./Button.astro";
             <p>Comprehensive video editing to enhance visual appeal</p>
         </div>
         
-        <Button text="Explore all services" />
+        <Button text="Explore all services" classNames='mt-6 col-span-full' />
     </div>
 </section>
