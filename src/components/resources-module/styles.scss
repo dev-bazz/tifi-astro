@@ -152,10 +152,13 @@
 			border: 1px solid var(--gray-500, #d0d5dd);
 			background: var(--base-white, #fff);
 			display: flex;
-			width: 169px;
 			padding: 10px 14px;
 			align-items: center;
 			gap: 8px;
+
+			@include custom-media-query("mobile", 538px) {
+				margin-top: 16px;
+			}
 		}
 	}
 
@@ -178,6 +181,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 32px;
+		@include custom-media-query("mobile", 538px) {
+			max-width: px-to-rem(310px);
+		}
 	}
 
 	.des-tag2 {
@@ -213,11 +219,14 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
+		@include custom-media-query("mobile", 538px) {
+			font-size: 10px;
+		}
 
 		&:is(.active) {
 			color: #ff601f;
 			text-align: center;
-			font-size: 16px;
+
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;

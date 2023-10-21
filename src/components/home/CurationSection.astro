@@ -1,0 +1,55 @@
+---
+import Button from "./Button.astro";
+---
+<section class="text-center">
+    <div class="px-4 py-12 grid gap-5 bg-gray-1000 text-gray-600 md:py-[5rem] xl:py-[7rem]">
+        <h2  class="max-w-[36rem] mx-auto font-semibold text-3xl text-white md:text-4xl">Our Curated Masterpieces</h2>
+        <p class="max-w-[36rem] mx-auto ">Projects that define our commitment to storytelling, innovation, and the art of video editing. Each video is a masterpiece, a testament to our dedication to making your vision a reality</p>
+    </div>
+
+    <div class="tech-div py-[15rem] text-white grid gap-2 xl:py-[18.5rem]">
+        <h5 class="font-bold md:text-5xl xl:text-7rem">The Tech Guy</h5>
+        <p class="text-xl">A Day in the life of a Software Developer</p>
+        <Button url="/porfolio" text="View Project" iconPath="/lets-talk-arrow.svg" classNames="mx-auto mt-5 bg-[#FFFFFF2B] font-inter capitalize" />
+    </div>
+
+    <div class="mtn-div py-[15rem] text-white grid gap-2 xl:py-[18.5rem]">
+        <h5 class="font-bold md:text-5xl xl:text-7rem">We Are the Pulse</h5>
+        <p class="text-xl">An Ad made for MTN</p>
+        <Button url="/porfolio" text="View Project" iconPath="/lets-talk-arrow.svg" classNames="mx-auto mt-5 bg-[#FFFFFF2B] font-inter capitalize" />
+    </div>
+
+    <div class="all-projects py-[15rem] text-white grid gap-2 xl:py-[18.5rem]">
+        <h5 class="font-bold md:text-5xl xl:text-7rem relative z-1">All Projects</h5>
+        <p class="text-xl relative z-1">We don’t like to brag, so let our work do the talking</p>
+        <Button url="/porfolio" text="View Project" iconPath="/lets-talk-arrow.svg" classNames="mx-auto mt-5 bg-[#FFFFFF2B] font-inter capitalize relative z-1" />
+    </div>
+</section>
+
+<style>
+    .tech-div{
+        background: url('/images/curated-bg.png') 50% 50% no-repeat;
+        background-size: cover;
+    }
+
+    .mtn-div{
+        background: url('/images/curated-bg2.png') 50% 50% no-repeat;
+        background-size: cover;
+    }
+
+    .all-projects{
+        position: relative;
+        background: url('/images/curated-bg1.png') 50% 50% no-repeat;
+        background-size: cover;
+    }
+
+    .all-projects:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #101828AB;
+    }
+</style>
