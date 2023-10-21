@@ -93,6 +93,12 @@
 
 	.res-header {
 		max-width: px-to-rem(1180px);
+
+		p {
+			max-width: 80ch;
+			margin-bottom: px-to-rem(50px);
+			margin-inline: auto;
+		}
 		.orange {
 			color: #ff601f;
 		}
