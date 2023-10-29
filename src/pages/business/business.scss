@@ -1,9 +1,4 @@
 .business-title-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
   border-radius: 1rem;
   text-align: center;
   background: linear-gradient(
@@ -12,7 +7,7 @@
     #eaecf0 100%
   );
   height: 27.875rem;
-  width: 80%;
+  max-width: 1168px;
   padding: 14.9375rem 11rem 8.625rem 11rem;
   margin-bottom: 6rem;
 
@@ -38,8 +33,8 @@
 .corporate-service-section {
   display: flex;
   background: #f2f4f7;
-  padding: 6rem 10rem;
   flex-direction: column;
+  padding: 6rem 0rem;
   height: auto;
   width: 100%;
 
@@ -47,6 +42,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1168px;
+    margin: 0 auto;
   }
 
   .corporate-title-container {
@@ -76,8 +73,7 @@
   }
 
   .business-service-cards {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     width: 100%;
     justify-content: center;
     gap: 2rem;
@@ -87,12 +83,13 @@
       background-color: white;
       flex-direction: column;
       border-radius: 0.5rem;
-      height: 27.5rem;
-      width: 19rem;
+      height: 100%;
+      // width: 19rem;
       img {
         border-top-left-radius: 0.5rem;
         border-top-right-radius: 0.5rem;
-        height: 12.8125rem;
+        height: 12rem;
+        width: 100%;
         object-fit: cover;
       }
 
@@ -158,9 +155,7 @@
 .custom-solutions-section {
   display: flex;
   flex-direction: column;
-  background: #fcfcfd;
   width: 100%;
-  padding: 6rem 10rem;
   justify-content: center;
   align-items: center;
   gap: 3.5rem;
@@ -189,16 +184,16 @@
   }
 
   .solution-cards {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     gap: 2rem;
+    width: 100%;
 
     .solution-card {
       display: flex;
       border-radius: 1rem;
       padding: 2rem;
       height: 24rem;
-      width: 31rem;
+      width: 100%;
       flex-direction: column;
       align-items: flex-start;
       gap: 0.625rem;
@@ -235,10 +230,9 @@
   flex-direction: column;
   gap: 3.5rem;
   align-items: center;
-  background: #fcfcfd;
   height: 42.0625rem;
   width: 100%;
-  padding: 6rem 10rem;
+  padding: 6rem 0;
 
   .impact-title-container {
     display: flex;
@@ -268,7 +262,7 @@
     background: #f2f4f7;
     border-radius: 1.5rem;
     width: 100%;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
 
     div {
       width: 18rem;
@@ -336,7 +330,7 @@
   color: #fff;
   flex-direction: column;
   width: 100%;
-  padding: 6rem 0rem;
+  padding: 6rem;
   justify-content: center;
   align-items: center;
 
@@ -345,6 +339,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 4rem;
+    max-width: 1168px;
 
     .elevating-your-brand-title-container {
       display: flex;
@@ -423,6 +418,15 @@
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .solution-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .business-service-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .business-title-card {
     height: 25.6875rem;
@@ -442,7 +446,7 @@
   .corporate-service-section {
     display: flex;
     height: auto;
-    padding: 4.5rem 2.5rem;
+    padding: 4.5rem 1rem;
     align-items: flex-start;
     gap: 0.625rem;
 
@@ -488,7 +492,7 @@
   }
 
   .custom-solutions-section {
-    padding: 4.5rem 2.5rem;
+    padding: 4.5rem 1rem;
     .solutions-title-container {
       .solutions-title-text {
         font-size: 1.25rem;
@@ -518,7 +522,7 @@
     gap: 3rem;
     height: 40rem;
     width: 100%;
-    padding: 4.5rem 2.5rem;
+    padding: 4.5rem 1rem;
 
     .impact-title-container {
       .impact-title {
@@ -542,7 +546,7 @@
   }
 
   .case-studies-section {
-    padding: 4.5rem 2.5rem;
+    padding: 4.5rem 1rem;
     .case-studies-title-container {
       .case-studies-title {
         font-size: 3rem;
@@ -551,7 +555,7 @@
   }
 
   .elevating-your-brand-section {
-    padding: 4.5rem 2.5rem;
+    padding: 4.5rem 1rem;
     gap: 0.625rem;
     align-self: stretch;
 
@@ -593,15 +597,15 @@
 
   .business-form-section {
     padding: 4.5rem 0rem;
-  
+
     .business-title-container {
       display: flex;
       width: 46rem;
-  
+
       h3 {
         font-size: 3rem;
       }
-  
+
       p {
         width: 43.875rem;
         color: #344054;
@@ -609,7 +613,7 @@
         line-height: 160%;
       }
     }
-  
+
     .business-form-container {
       width: 38rem;
     }
@@ -740,14 +744,14 @@
 
   .business-form-section {
     padding: 3rem 1rem;
-  
+
     .business-title-container {
       width: 100%;
-  
+
       h3 {
         font-size: 2rem;
       }
-  
+
       p {
         width: 100%;
         color: #344054;
@@ -755,7 +759,7 @@
         line-height: 160%;
       }
     }
-  
+
     .business-form-container {
       width: 100%;
     }
