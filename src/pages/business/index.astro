@@ -5,6 +5,7 @@ import { FormContainer } from '../../components/FormContainer';
 import FAQLayout from "../../components/ResourcesFAQ/FAQLayout.astro";
 import SocialProof from "../../components/SocialProof.astro";
 import './business.scss'
+import Button from '../../components/home/Button.astro';
 ---
 
 <MainLayout title="For Business">
@@ -43,7 +44,7 @@ import './business.scss'
 					</div>
 				</div>
 				<p class="corporate-bottom-text">We believe that every video has a story to tell, and every story has a message that connects. Our corporate video services are not just about visuals; they're about creating a lasting impact on your branding and marketing goals.</p>
-				<button class="lets-talk-button font-inter">Let's Talk <img src="/lets-talk-arrow.svg" /></button>
+				<Button url="/contact" text="Let's Talk" classNames='mx-auto text-white' iconPath="/lets-talk-arrow.svg" />
 			</div>
 		</section>
 		<section class="custom-solutions-section">

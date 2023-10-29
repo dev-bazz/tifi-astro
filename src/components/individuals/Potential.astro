@@ -1,3 +1,8 @@
+---
+import Button from "../home/Button.astro";
+---
+
+
 <section class="wrapper mt-16">
 <section class="wrapper2 md:px-24 py-16">
   <div>
@@ -83,12 +88,7 @@
   <p class="max-w-[720px] mt-8 mx-auto text-center  text-base">
     With tifi.tv, your creative vision transforms into captivating visual stories.
   </p>
-  <button class="flex gap-2 items-center w-fit mt-4 p-3 mx-auto bg-orange font-bold text-white uppercase">
-  <a href="/contact" class="">
-   LETS TALK
-</a>
-<img src="/button arrow.svg" alt="">
-</button>
+  <Button url="/contact" text="Let's Talk" classNames='mx-auto text-white mt-4' iconPath="/lets-talk-arrow.svg" />
 </section>
 </section>
 <style>
